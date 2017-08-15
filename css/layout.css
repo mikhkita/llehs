@@ -85,7 +85,7 @@ input:-moz-placeholder {
 	color: #999;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before,[class^="icon-"]:after, [class*=" icon-"]:after {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
 	speak: none;
@@ -99,7 +99,38 @@ input:-moz-placeholder {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-cars:before {
+  content: "\e909";
+  color: #fefefe;
+}
+.icon-marketing:before {
+  content: "\e90a";
+  color: #fefefe;
+}
+.icon-schema:before {
+  content: "\e90b";
+  color: #fefefe;
+}
+.icon-cup:before {
+  content: "\e90c";
+  color: #fefefe;
+}
+.icon-red-arrow:after {
+  content: "\e925";
+  color: #de1d21;
+}
+.icon-graph:before {
+  content: "\e905";
+}
+.icon-hands:before {
+  content: "\e906";
+}
+.icon-human:before {
+  content: "\e907";
+}
+.icon-money:before {
+  content: "\e908";
+}
 .icon-cross:before {
 	content: "\e903";
 }
@@ -544,14 +575,50 @@ body.black{
 					width: calc(100% / 3);
 				}
 				.b-second .b-item-1{
+					position: relative;
 					/*width: 25%;*/
 				}
+				.b-second .b-item-1 .b-box-opacity-1{
+					content: '';
+					display: block;
+					width: 50px;
+					height: 56px;
+					position: absolute;
+					top: -56px;
+					left: 173px;
+					background-color: #f2f2f2;
+					/*width: 25%;*/
+				}				
 				.b-second .b-item-2{
+					position: relative;
 					/*width: 33%;*/
 				}
+				.b-second .b-item-2:before{
+					content: '';
+					display: block;
+					width: 10px;
+					height: 36px;
+					position: absolute;
+					top: -36px;
+					left: 172px;
+					background-color: #f2f2f2;
+					/*width: 25%;*/
+				}				
 				.b-second .b-item-3{
+					position: relative;
 					/*width: 28%;*/
 				}
+				.b-second .b-item-3:before{
+					content: '';
+					display: block;
+					width: 50px;
+					height: 56px;
+					position: absolute;
+					top: -56px;
+					left: 130px;
+					background-color: #f2f2f2;
+					/*width: 25%;*/
+				}				
 					.b-second .b-img{
 						display: inline-block;
 						background: #DE1D21;
@@ -831,6 +898,192 @@ body.black{
 		margin-top: 40px;
 		margin-bottom: -20px;
 	}
+.b-business {
+
+}
+	.b-business .b-head {
+
+	}
+		.b-business h1 {
+			margin-bottom: 2px;
+			color: #404040;}
+		.b-business p {
+			font-size: 16px;
+			line-height: 25px;
+			width: 60%;
+			margin: 0 auto;
+			margin-bottom: 25px;
+			color: #404040;
+		}
+	.b-business .b-first{
+
+	}
+		.b-slider {
+
+		}
+			.b-slide {
+
+			}
+		.b-business h2 {
+			background-color: #DE1D21;
+			color: #ffffff;
+			margin-bottom: 27px;
+			line-height: 24px;
+			font-size: 16px;
+			padding: 12px 0 10px;
+			width: 100%;
+		}
+		.b-img-h3 {
+			background-color: #DE1D21;
+			width: calc((100% - 18px)/2);
+			text-align: left;
+		}
+			.b-img-h3 img {
+				height: 127px;width: 249px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.b-img-h3 h3 {
+				display: inline-block;
+				vertical-align: middle;
+				text-align: left;
+				box-sizing: border-box;
+				padding: 0 26px;
+				color: #ffffff;
+				width: calc(100% - 254px);
+				font-size: 16px;
+				line-height: 20px;
+			}
+	.b-business .b-second {
+
+	}
+	h2 {
+
+	}
+	.b-business .b-pluses {
+
+	}
+	.b-second .b-plus {
+		padding-top: 95px;
+		height: 268px;
+	}
+	.b-plus {
+		width: calc((100% - 74px)/4);
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+		box-sizing: border-box;
+		padding: 15px;
+		text-align: left;
+		position: relative;
+	}
+		.b-plus h3 {
+			font-size: 16px;
+			line-height: 20px;
+			color: #ffffff;
+			display: inline-block;
+			vertical-align: bottom;
+			height: 50%;
+		}
+		.b-plus p {
+			font-size: 14px;
+			line-height: 17px;
+			color: #ffffff;
+			height: 50%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0;
+			width: 100%;
+		}
+		.b-plus:before{
+			position: absolute;
+			color: #ffffff;
+			font-size: 55px;
+			top: 24px;
+			left: 15px;
+		}
+		.b-plus-1 {
+			background-color: #003C8A;
+		}
+		.b-plus-2 {
+			background-color: #008443;
+		}
+		.b-plus-3 {
+			background-color: #DE1D21;
+		}
+		.b-plus-4 {
+			background-color: #FBCE05;
+			margin-right: 0px;
+		}
+			.b-business .b-plus.icon-money:before {
+				color: #404040;
+			}
+			.b-business .b-plus.icon-money h3 {
+			    color: #404040;
+			    text-transform: uppercase;
+			}
+			.b-business .b-plus.icon-money p {
+			    color: #404040;
+			}
+	.b-shell-logo-big{
+		display: block;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-image: url('../i/shell-logo-big.png');
+		width: 100%;
+		height: 118px;
+		background-size: 289px;
+		background-color: #F7F7F7;
+		margin-bottom: 16px;
+	}
+	.b-business .b-third {
+
+	}
+		.b-business .b-shell-logo-big {
+
+		}
+		.b-business .b-pluses-descr {height: 270px;}
+		.b-plus-1 li {
+			background-color: rgba(0, 60, 138, 0.3);
+		}
+		.b-plus-2 li {
+			background-color: rgba(0, 132, 67, 0.3);
+		}
+		.b-plus-3 li {
+			background-color: rgba(222, 29, 33, 0.3);
+		}
+		.b-plus-4 li {
+			background-color: rgba(251, 206, 5, 0.3);
+		}		
+			.b-third .b-plus {
+				height: 57px;
+				box-sizing: border-box;
+				padding: 0;
+				padding-left: 50px;
+			}
+			.b-third .b-plus:before {font-size: 26px;top: 17px;left: 10px;width: 35px;text-align: center;}
+			.b-third .b-plus:after {
+				position: absolute;
+				top: -24px;
+				left: calc((100% - 16px)/2);
+			}	
+			.b-third .b-valign		{
+				display: table;
+				height: 100%;
+			}
+				.b-third h3 {text-align: left;display: table-cell;vertical-align: middle;font-size: 14px;line-height: 17px;}
+				.b-third ul {width: 100%;left: 0;top: 57px;position: absolute;}
+					.b-third li {margin-top: 10px;height: 57px;padding: 0px 19px;box-sizing: border-box;display: table;width: 100%;}
+					.b-third p {color: #404040;vertical-align: middle;display: table-cell;}
+			.b-plus .b-plus-2 .icon-red-arrow .icon-cup {
+
+			}
+			.b-plus .b-plus-3 .icon-red-arrow .icon-schema {
+
+			}
+			.b-plus .b-plus-4 .icon-red-arrow .icon-marketing {
+
+			}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-logo{
