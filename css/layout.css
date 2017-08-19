@@ -578,7 +578,7 @@ body.black{
 					position: relative;
 					/*width: 25%;*/
 				}
-				.b-second .b-item-1 .b-box-opacity-1{
+/*				.b-second .b-item-1 .b-box-opacity-1{
 					content: '';
 					display: block;
 					width: 50px;
@@ -587,13 +587,12 @@ body.black{
 					top: -56px;
 					left: 173px;
 					background-color: #f2f2f2;
-					/*width: 25%;*/
-				}				
+				}*/				
 				.b-second .b-item-2{
 					position: relative;
 					/*width: 33%;*/
 				}
-				.b-second .b-item-2:before{
+/*				.b-second .b-item-2:before{
 					content: '';
 					display: block;
 					width: 10px;
@@ -602,13 +601,12 @@ body.black{
 					top: -36px;
 					left: 172px;
 					background-color: #f2f2f2;
-					/*width: 25%;*/
-				}				
+				}*/				
 				.b-second .b-item-3{
 					position: relative;
 					/*width: 28%;*/
 				}
-				.b-second .b-item-3:before{
+/*				.b-second .b-item-3:before{
 					content: '';
 					display: block;
 					width: 50px;
@@ -617,8 +615,7 @@ body.black{
 					top: -56px;
 					left: 130px;
 					background-color: #f2f2f2;
-					/*width: 25%;*/
-				}				
+				}	*/		
 					.b-second .b-img{
 						display: inline-block;
 						background: #DE1D21;
@@ -915,15 +912,16 @@ body.black{
 			margin-bottom: 25px;
 			color: #404040;
 		}
-	.b-business .b-first{
-
-	}
+	.b-business .b-first{margin-bottom: 15px;}
 		.b-content .b-business .b-slider {
 			display: none;
 		}
 			.b-slide {
 
 			}
+		.b-content	.b-business h2 {
+			margin-bottom: 15px;
+		}
 		.b-business h2 {
 			background-color: #DE1D21;
 			color: #ffffff;
@@ -936,6 +934,7 @@ body.black{
 		.b-content .b-business .b-img-h3 {
 		height: 70px;
 		background-color: #F7F7F7;
+		display: table;
 		}
 		.b-content .b-business .b-img-h3 img {
 			display: none;
@@ -950,6 +949,11 @@ body.black{
 				display: inline-block;
 				vertical-align: middle;
 			}
+			.b-content .b-business .b-img-h3 h3 {
+				color: #404040;
+				width: 100%;
+				display: table-cell;
+			}
 			.b-business .b-img-h3 h3 {
 				display: inline-block;
 				vertical-align: middle;
@@ -961,9 +965,7 @@ body.black{
 				font-size: 16px;
 				line-height: 20px;
 			}
-	.b-business .b-second {
-
-	}
+	.b-business .b-second {margin-bottom: 15px;}
 	h2 {
 
 	}
@@ -984,8 +986,14 @@ body.black{
 		margin-right: 20px;
 		box-sizing: border-box;
 		padding: 15px;
+		padding-top: 95px;
 		text-align: left;
 		position: relative;
+		height: 270px;
+	}
+	.b-content .b-business .b-plus h3 {
+		height: initial;
+		margin-bottom: 15px;
 	}
 		.b-business .b-plus h3 {
 			font-size: 16px;
@@ -1012,7 +1020,7 @@ body.black{
 			top: 24px;
 			left: 15px;
 		}
-		.b-content .b-business .b-plus:before {
+		.b-content .b-business .b-second .b-plus:before {
 			display: none;
 		}
 		.b-business .b-plus-1 {
@@ -1049,9 +1057,7 @@ body.black{
 		background-color: #F7F7F7;
 		margin-bottom: 16px;
 	}
-	.b-business .b-third {
-
-	}
+	.b-business .b-third {margin-bottom: 15px;}
 		.b-business .b-shell-logo-big {
 
 		}
@@ -1074,7 +1080,13 @@ body.black{
 				padding: 0;
 				padding-left: 50px;
 			}
-			.b-business .b-third .b-plus:before {font-size: 26px;top: 17px;left: 10px;width: 35px;text-align: center;}
+			.b-business .b-third .b-plus:before {
+				font-size: 26px;
+				top: 17px;
+				left: 10px;
+				width: 35px;
+				text-align: center;
+			}
 			.b-business .b-third .b-plus:after {
 				position: absolute;
 				top: -24px;
@@ -1084,10 +1096,33 @@ body.black{
 				display: table;
 				height: 100%;
 			}
-				.b-business .b-third h3 {text-align: left;display: table-cell;vertical-align: middle;font-size: 14px;line-height: 17px;}
-				.b-business .b-third ul {width: 100%;left: 0;top: 57px;position: absolute;}
-					.b-business .b-third li {margin-top: 10px;height: 57px;padding: 0px 19px;box-sizing: border-box;display: table;width: 100%;}
-					.b-business .b-third p {color: #404040;vertical-align: middle;display: table-cell;}
+				.b-business .b-third h3 {
+					text-transform: uppercase;
+					text-align: left;
+					display: table-cell;
+					vertical-align: middle;
+					font-size: 14px;
+					line-height: 17px;
+				}
+				.b-business .b-third ul {
+					width: 100%;
+					left: 0;
+					top: 57px;
+					position: absolute;
+				}
+					.b-business .b-third li {
+						margin-top: 15px;
+						height: 57px;
+						padding: 0px 19px;
+						box-sizing: border-box;
+						display: table;
+						width: 100%;
+					}
+					.b-business .b-third p {
+						color: #404040;
+						vertical-align: middle;
+						display: table-cell;
+					}
 			.b-business .b-plus .b-plus-2 .icon-red-arrow .icon-cup {
 
 			}
@@ -1096,6 +1131,9 @@ body.black{
 			}
 			.b-business .b-plus .b-plus-4 .icon-red-arrow .icon-marketing {
 
+			}
+			.b-content .b-business .b-translate {
+				display: none;
 			}
 	
 
