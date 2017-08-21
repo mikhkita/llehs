@@ -47,7 +47,7 @@ $(document).ready(function(){
                 }else{
                     $(".b-info-right .red").text(timeLabel[0]+".");
                     
-                    // window.location.href = "video.html";
+                    window.location.href = "video.html";
                 }
             },1000);
         }
