@@ -1,4 +1,5 @@
 $(document).ready(function(){	
+    var whatched = false;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -20,6 +21,38 @@ $(document).ready(function(){
             dots : true,
             arrows : false
         });
+    }
+
+    if( !whatched ){
+        $(".b-main-buttons a").click(function(){
+            return false;
+        });
+        if( $(".b-info-right .red").length ){
+            var time = 5,
+                timeLabel = [
+                    "0 секунд",
+                    "1 секунда",
+                    "2 секунды",
+                    "3 секунды",
+                    "4 секунды",
+                    "5 секунд"
+                ];
+            setTimeout(function run(){
+                if( time > 1 ){
+                    time--;
+
+                    $(".b-info-right .red").text(timeLabel[time]+".");
+
+                    setTimeout(run, 1000);
+                }else{
+                    $(".b-info-right .red").text(timeLabel[0]+".");
+                    
+                    // window.location.href = "video.html";
+                }
+            },1000);
+        }
+    }else{
+
     }
 
     // setTimeout(function(){
@@ -81,6 +114,7 @@ $(document).ready(function(){
                 scrollTop : 0
             },300);
             $("body").addClass("show").addClass("anim");
+            $(".b-to-content").addClass("b-content");
         });
     }
 

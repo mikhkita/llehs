@@ -219,17 +219,19 @@ body.black{
 				position: relative;
 				top: 1px;
 			}
-		.b-red-btn{
+		.b-red-btn,
+		.not-watched .b-red-btn:hover{
 			background: #DE1D21;
 		}
 			.b-red-btn:hover{
 				background: #CD1A1E;
 			}
-		.b-grey-btn{
+		.b-grey-btn,
+		.not-watched .b-grey-btn:hover{
 			background: #595959;
 		}	
 			.b-grey-btn:hover{
-				background: #434343
+				background: #434343;
 			}
 		.b-main-buttons .b-btn{
 			width: 280px;
@@ -238,6 +240,10 @@ body.black{
 			font-weight: 700;	
 			text-transform: uppercase;
 			letter-spacing: 0.6px;
+		}
+		.not-watched .b-main-buttons .b-btn{
+			opacity: 0.33;
+			cursor: default;
 		}
 		.b-main-buttons .b-red-btn{
 			margin-right: 33px;
@@ -330,6 +336,37 @@ body.black{
 			left: -46px;
 			top: 6px;
 		}
+.b-info-right{
+	position: absolute;
+	right: 33px;
+	top: 123px;
+}
+	.b-info-right div{
+		background: #FFF;
+		padding: 13px 14px 14px;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000;
+		text-align: left;
+		width: 300px;
+		box-sizing: border-box;
+		margin-bottom: 15px;
+	}
+	.b-info-right .b-white{
+
+	}
+	.b-info-right .b-grey{
+		background: #595959;
+		color: #FFF;
+	}
+		.b-info-right b{
+			font-weight: bold;
+		}
+		.b-info-right .red{
+			white-space: nowrap;
+			font-weight: bold;
+			color: #DE1D21;
+		}
 .b-menu-cont{
 
 }
@@ -338,48 +375,27 @@ body.black{
 	}
 		.b-menu li{
 			float: left;
-			margin-right: 30px;
+			margin-right: 14px;
 		}
 			.b-menu a{
 				display: block;
 				padding: 38px 0px 39px;
 				font-size: 14px;
 				line-height: 23px;
+				margin: 30px 0px;
+				padding: 8px 12px 9px;
 				color: #FFF;
 				font-weight: 700;
 				position: relative;
 			}
-			.b-menu a:before{
-				position: absolute;
-				content: "s";
-				font-size: 0px;
-				width: 100%;
-				height: 0px;
-				left: 0px;
-				bottom: 0px;
-				background: #FFF;
-				opacity: 0.7;
-				-webkit-transition: height 100ms ease-out;
-				   -moz-transition: height 100ms ease-out;
-				    -ms-transition: height 100ms ease-out;
-				   	 -o-transition: height 100ms ease-out;
-						transition: height 100ms ease-out;
-			}
-			.b-menu a:hover:before{
-				height: 5px;
+			.b-menu a:hover{
+				box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.5);
 			}
 			.b-menu a.active:before{
 				display: none;
 			}
-			.b-menu a.active:after{
-				position: absolute;
-				content: "s";
-				font-size: 0px;
-				width: 100%;
-				height: 5px;
-				left: 0px;
-				bottom: 0px;
-				background: #FBCE07;
+			.b-menu a.active{
+				box-shadow: inset 0px 0px 0px 3px #FBCE07;
 			}
 	.b-motiv-cont{
 		margin-top: 30px;
@@ -1135,7 +1151,12 @@ body.black{
 			.b-content .b-business .b-translate {
 				display: none;
 			}
-	
+body.show .b-business .b{
+	display: none;
+}
+body.show .b-business .b-after{
+	display: block;
+}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-logo{
